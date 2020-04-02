@@ -1,24 +1,28 @@
 ﻿using System;
 
-namespace PlayingAroundWithTheCSharp
+namespace cmdCalc
 {
     class Program
     {
-
-        public int Add(int a, int b)
+        int Multiply(int a, int b)
+        {
+            return a * b;
+        }
+        
+        int Add(int a, int b)
         {
             return a + b;
         }
 
+        void Prompt()
+        {
+            Console.WriteLine("# ");
+            string operation = Console.ReadLine();
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, there Octavio. Welcome back!");
-
-            Program program = new Program();
-
-            int sum = program.Add(1, 2);
-
-            Console.WriteLine("The sum of 1 and 2 is " + sum);
+            
         }
     }
 }
