@@ -2,7 +2,7 @@
 
 namespace cmdCalc
 {
-    class Program
+    class Calculator
     {
         int Multiply(int a, int b)
         {
@@ -19,8 +19,6 @@ namespace cmdCalc
             Console.WriteLine("# ");
             string operation = Console.ReadLine();
         }
-
-
 
         static void Main(string[] args)
         {
