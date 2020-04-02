@@ -19,16 +19,24 @@ namespace cmdCalc
         {
             Console.WriteLine("# ");
             string operation = Console.ReadLine();
+            Operation userOperation = GetOperationFromUserInput(operation.ToLower());
         }
 
-        bool ValidateUserInput()
+        Operation GetOperationFromUserInput(string userInput)
         {
-            return false;
+            switch (userInput)
+            {
+                case "multiply":
+                    return Operation.Multiply;
+                default:
+                    return Operation.Add;
+            }
         }
 
         static void Main(string[] args)
         {
-            
+            Calculator calc = new Calculator();
+            calc.Prompt();
         }
     }
 }

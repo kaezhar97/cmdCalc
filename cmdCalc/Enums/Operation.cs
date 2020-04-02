@@ -1,6 +1,6 @@
 ﻿namespace cmdCalc.Enums
 {
-    enum Operations
+    enum Operation
     {
         Add,
         Subtract,
