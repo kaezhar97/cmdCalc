@@ -20,6 +20,8 @@ namespace cmdCalc
             string operation = Console.ReadLine();
         }
 
+
+
         static void Main(string[] args)
         {
             
