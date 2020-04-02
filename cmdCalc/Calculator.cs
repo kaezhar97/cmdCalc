@@ -1,4 +1,5 @@
 ﻿using System;
+using cmdCalc.Enums;
 
 namespace cmdCalc
 {
@@ -18,6 +19,11 @@ namespace cmdCalc
         {
             Console.WriteLine("# ");
             string operation = Console.ReadLine();
+        }
+
+        bool ValidateUserInput()
+        {
+            return false;
         }
 
         static void Main(string[] args)
